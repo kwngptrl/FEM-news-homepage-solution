@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+
+</head>
+
+<body>
+  <div class="dark-overlay hidden"></div>
+  <div class="masthead">
+    <header>
+      <img class="logo" src="../news-homepage-main/assets/images/logo.svg" alt="">
+    </header>
+    <nav>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+        aria-label="menu"></button>
+      <!-- In KP's github repo the 'aria-expanded="false"' is within the span, that's why the x icon's not showing properly -->
+      <!-- <span class="sr-only">Menu</span> -->
+      <!-- img will be in css as background-image -->
+      <ul id="primary-navigation" data-visible="false" class="navigation-container">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <article class="headline">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="headline-image">
+      </picture>
+      <h1 class="headline-title inter-extra-bold">The Bright Future of Web 3.0?</h1>
+      <p class="content">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
+        the people.
+        But is it really fulfilling its promise?
+      </p>
+      <a href="#" class="headline-link">Read more</a>
+    </article>
+
+    <section class="new-articles">
+      <h1 class="new-articles-header">New</h1>
+      <article>
+        <h2 class="new-articles-title">
+          <a href="#">Hydrogen VS Electric Cars</a>
+        </h2>
+        <p class="content-snippet">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+      </article>
+      <article>
+        <h2 class="new-articles-title">
+          <a href="#">The Downsides of AI Artistry</a>
+        </h2>
+        <p class="content-snippet">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </article>
+      <article>
+        <h2 class="new-articles-title">
+          <a href="#">Is VC Funding Drying Up?</a>
+        </h2>
+        <p class="content-snippet">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </article>
+    </section>
+
+    <div class="trending">
+      <article>
+        <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        <h2 class="trending-rank">01</h2>
+        <h3 class="trending-title inter-extra-bold">
+          <a href="#">Reviving Retro PCs</a>
+        </h3>
+        <p class="trending-snippet">
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </article>
+      <article>
+        <img src="./assets/images/image-top-laptops.jpg" alt="">
+        <h2 class="trending-rank">02</h2>
+        <h3 class="trending-title inter-extra-bold">
+          <a href="#">Top 10 Laptops of 2022</a>
+        </h3>
+        <p class="trending-snippet">
+          Our best picks for various needs and budgets.
+        </p>
+      </article>
+      <article>
+        <img src="./assets/images/image-gaming-growth.jpg" alt="">
+        <h2 class="trending-rank">03</h2>
+        <h3 class="trending-title inter-extra-bold">
+          <a href="#">The Growth of Gaming</a>
+        </h3>
+        <p class="trending-snippet">
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </article>
+
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/kwngptrl" target="_blank">Wannacode</a>.
+  </footer>
+</body>
+
+</html>
