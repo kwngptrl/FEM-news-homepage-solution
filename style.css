@@ -169,7 +169,7 @@ header{
     right: calc(1rem + 9px);
     /* when the transform is performed, the svg shifts position in X. I don't know the solution yet */
     transform: rotate(1turn);
-    background-image: url('../news-homepage-main/assets/images/icon-menu-close.svg');
+    background-image: url('./assets/images/icon-menu-close.svg');
 }
 
 main {
